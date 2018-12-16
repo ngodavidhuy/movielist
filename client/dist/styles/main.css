@@ -1,0 +1,43 @@
+* {
+  font-family: helvetica;
+}
+
+h1 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.main-list {
+  list-style-type: none; 
+}
+
+li {
+  border: 1px solid grey;
+  padding: 20px 10px;
+}
+
+ul {
+  height: 50%;
+  width: 30%;
+}
+
+.search-button, .add-button {
+  border-radius: 5px;
+  height: 26px;
+  margin-left: 3px;
+  text-align: center;
+}
+
+.main-container {
+  margin: 1%;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+}
