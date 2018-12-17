@@ -27,7 +27,7 @@ class AddMovie extends Component {
     return (
       <form onSubmit={this.handleQuerySubmit} >
         <label>
-          <input name="query" value={this.state.query} onChange={this.handleQueryChange} /> 
+          <input name="query" value={this.state.query} onChange={this.handleQueryChange} placeholder="Add..." /> 
         </label>
         <button className="add-button"><i className="glyphicon glyphicon-plus"></i></button>
       </form>

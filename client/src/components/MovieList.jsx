@@ -9,7 +9,7 @@ const MovieList = (props) => {
 
   return (
     <ul className="main-list">
-      {movies}
+      {movies.length ? movies : "no movie by that name found"}
     </ul>
   );
 }

@@ -21,13 +21,15 @@ class SearchMovie extends Component {
 
   handleQuerySubmit(e) {
     e.preventDefault();
+    let title = this.state.query;
+    this.props.handleSearch(title);
   }
 
   render() {
     return (
       <form onSubmit={this.handleQuerySubmit} >
         <label>
-          <input name="query" value={this.state.query} onChange={this.handleQueryChange} /> 
+          <input name="query" value={this.state.query} onChange={this.handleQueryChange} placeholder="Search..."/> 
         </label>
         <button className="search-button"><i className="glyphicon glyphicon-search"></i></button>
       </form>
